@@ -64,7 +64,7 @@ public class UserpanelController {
 	@Autowired
 	private NotepaperService nservice;
 	
-//	@Value("${img.rootpath}")
+	@Value("${img.rootpath}")
 	private String rootpath;
 
 	@PostConstruct

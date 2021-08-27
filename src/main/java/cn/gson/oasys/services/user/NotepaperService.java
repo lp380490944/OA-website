@@ -26,7 +26,7 @@ public class NotepaperService {
 	@Autowired
 	private NotepaperDao ndao;
 	
-//	@Value("${img.rootpath}")
+	@Value("${img.rootpath}")
 	private String rootpath;
 	
 	public void delete(Long id){
