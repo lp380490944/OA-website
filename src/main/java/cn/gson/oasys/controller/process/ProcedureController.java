@@ -116,7 +116,7 @@ public class ProcedureController {
 	@Autowired
 	private AttendceDao adao;
 	
-	@Value("${attachment.roopath}")
+	// @Value("${attachment.roopath}")
 	private String rootpath;
 
 	@PostConstruct

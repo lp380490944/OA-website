@@ -52,7 +52,7 @@ public class FileServices {
     private AttachService AttachService;
 
 
-    @Value("${file.root.path}")
+    // @Value("${file.root.path}")
     private String rootPath;
 
     @PostConstruct
