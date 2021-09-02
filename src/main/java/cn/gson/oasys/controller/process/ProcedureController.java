@@ -72,7 +72,9 @@ import cn.gson.oasys.model.entity.system.SystemStatusList;
 import cn.gson.oasys.model.entity.system.SystemTypeList;
 import cn.gson.oasys.model.entity.user.User;
 import cn.gson.oasys.services.process.ProcessService;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @Controller
 @RequestMapping("/")
 public class ProcedureController {
@@ -123,11 +125,13 @@ public class ProcedureController {
 	public void UserpanelController(){
 		try {
 			String temp= ResourceUtils.getURL("classpath:").getPath().replace("/target/classes/","/static/attachment");
+            log.info("Temp: {}", temp);
 			rootpath=URLDecoder.decode(temp, "utf-8");
 			System.out.println(rootpath);
-
+            log.info("Root Path: {}",  rootpath);
 		}catch (IOException e){
 			System.out.println("获取项目路径异常");
+            log.error("获取项目路径异常 Something went wrong. Cause: {}", e.getLocalizedMessage());
 		}
 	}
 
