@@ -41,6 +41,7 @@ import javax.validation.Valid;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URLDecoder;
 import java.util.Date;
 import java.util.List;
@@ -71,6 +72,8 @@ public class UserpanelController {
 	public void UserpanelController(){
 		try {
 			String temp= ResourceUtils.getURL("classpath:").getPath().replace("/target/classes/","/static/image");
+			// InputStream inputStream=this.getClass().getResourceAsStream("/static/image");
+			temp = System.getProperty("user.dir");
 			rootpath=URLDecoder.decode(temp,"utf-8");
 			System.out.println(rootpath);
 			System.out.println(temp);
