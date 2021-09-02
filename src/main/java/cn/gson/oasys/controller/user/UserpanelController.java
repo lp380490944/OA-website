@@ -75,8 +75,8 @@ public class UserpanelController {
 			// InputStream inputStream=this.getClass().getResourceAsStream("/static/image");
 			temp = System.getProperty("user.dir");
 			rootpath=URLDecoder.decode(temp,"utf-8");
-			System.out.println(rootpath);
-			System.out.println(temp);
+			System.out.println("rootPath:"+rootpath);
+			System.out.println("temp:"+ temp);
 
 		}catch (IOException e){
 			System.out.println("获取项目路径异常");
