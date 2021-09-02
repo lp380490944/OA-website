@@ -36,7 +36,6 @@ import cn.gson.oasys.model.entity.note.Attachment;
 import cn.gson.oasys.model.entity.user.User;
 
 import javax.annotation.PostConstruct;
-@slf4j
 @Service
 public class FileServices {
 
@@ -116,7 +115,7 @@ public class FileServices {
 
 
         File savepath = new File(this.rootPath, tmp);
-        System.out.println(savePath.getPath());
+        System.out.println(savepath.getPath());
 
         if (!savepath.exists()) {
             savepath.mkdirs();
