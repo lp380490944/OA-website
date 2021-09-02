@@ -73,6 +73,7 @@ public class UserpanelController {
 			String temp= ResourceUtils.getURL("classpath:").getPath().replace("/target/classes/","/static/image");
 			rootpath=URLDecoder.decode(temp,"utf-8");
 			System.out.println(rootpath);
+			System.out.println(temp);
 
 		}catch (IOException e){
 			System.out.println("获取项目路径异常");
