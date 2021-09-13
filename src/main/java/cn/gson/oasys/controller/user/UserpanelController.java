@@ -65,7 +65,7 @@ public class UserpanelController {
 	@Autowired
 	private NotepaperService nservice;
 	
-//	@Value("${img.rootpath}")
+	@Value("${img.rootpath}")
 	private String rootpath;
 
 	@PostConstruct
@@ -73,7 +73,7 @@ public class UserpanelController {
 		try {
 			String temp= ResourceUtils.getURL("classpath:").getPath().replace("/target/classes/","/static/image");
 			// InputStream inputStream=this.getClass().getResourceAsStream("/static/image");
-			temp = System.getProperty("user.dir");
+//			temp = System.getProperty("user.dir");
 			rootpath=URLDecoder.decode(temp,"utf-8");
 			System.out.println("rootPath:"+rootpath);
 			System.out.println("temp:"+ temp);
