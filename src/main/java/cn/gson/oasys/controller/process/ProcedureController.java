@@ -371,7 +371,7 @@ public class ProcedureController {
 				model.addAttribute("eve", eve);
 				model.addAttribute("map", map);
 				return "process/eveserach";
-			}else if(("加班申请").equals(typename)){
+			}else if(("计件申请").equals(typename)){
 				Overtime eve=odao.findByProId(process);
 				String type=tydao.findname(eve.getTypeId());
 				model.addAttribute("eve", eve);

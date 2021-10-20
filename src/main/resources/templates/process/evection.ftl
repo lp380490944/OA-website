@@ -66,11 +66,11 @@ border-right: 1px solid #ddd;
 </style>
 <div class="row" style="padding-top: 10px;">
 	<div class="col-md-2">
-		<h1 style="font-size: 24px; margin: 0;" class="">出差申请</h1>
+		<h1 style="font-size: 24px; margin: 0;" class="">计件申请</h1>
 	</div>
 	<div class="col-md-10 text-right">
 		<a href="##"><span class="glyphicon glyphicon-home"></span> 首页</a> > <a
-			disabled="disabled">出差申请</a>
+			disabled="disabled">计件申请</a>
 	</div>
 </div>
 <div class="row" style="padding-top: 15px;">
@@ -82,7 +82,7 @@ border-right: 1px solid #ddd;
 				<table class="bo table ">
 			
 				<tr >
-					<td colspan="14" class="title"><h2>出差申请单</h2></td>
+					<td colspan="14" class="title"><h2>计件申请单</h2></td>
 			
 				</tr>
 				<tr style="opacity: 0;">
@@ -99,7 +99,7 @@ border-right: 1px solid #ddd;
 				</tr>
 				<tr >
 					<td class="title"><label class="control-label">标题</label></td>
-					<td  colspan="6"><input type="text" class="form-control inpu" name="proId.processName"/></td>
+					<td  colspan="6"> <input type="text" class="form-control inpu"  value="我的计件申请单信息" placeholder="我的计件申请单信息" name="proId.processName"/></td>
 					
 					<td class="title"><span >紧急程度</span></td>
 					<td colspan="6">
@@ -115,7 +115,7 @@ border-right: 1px solid #ddd;
 					<td class="title" ><label class="control-label">申请人</label></td>
 					<td  colspan="6"><input type="text" class="form-control inpu"
 					readonly="readonly" style="background-color:#fff;" value="${username}"/></td>
-					<td class="title" ><label class="control-label">外出类型</label></td>
+					<td class="title" ><label class="control-label">工序类型</label></td>
 					<td colspan="6">
 						<select class="form-control inpu" name="typeId">
 							<#list outtype as out>
@@ -154,14 +154,14 @@ border-right: 1px solid #ddd;
 				
 				<tr >
 					
-					<td class="title" ><label class="control-label">出差原因</label></td>
+					<td class="title" ><label class="control-label">工作量详情</label></td>
 					<td  colspan="6"><textarea class="form-control text" name="proId.processDescribe"></textarea></td>
 				</tr>
 				<tr >
 
 					<td colspan="14" style="text-align: right;" >
 					<input   type="text" class="days" name="proId.procseeDays" hidden="hidden"/>
-					<input   type="text" value="出差申请" name="val" hidden="hidden"/>
+					<input   type="text" value="计件申请" name="val" hidden="hidden"/>
 						<input class="btn btn-primary" id="save" type="submit" value="保存" />
 						<input class="btn btn-default" id="cancel" type="button" value="取消"
 						onclick="window.history.back();" />
